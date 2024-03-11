@@ -1,0 +1,112 @@
+.home {
+	& .hero {
+		& h1 {
+			font-size: 100px;
+			@media (max-width: 576px) {
+				font-size: 60px;
+			}
+		}
+		& h2 {
+			font-size: 80px;
+			color: purple;
+			@media (max-width: 576px) {
+				font-size: 60px;
+			}
+		}
+		& hr {
+			height: 2px;
+			width: 300px;
+			background-color: purple;
+		}
+	}
+	& .social {
+		margin-bottom: 200px;
+		& ul {
+			display: grid;
+			gap: 20px;
+			grid-template-columns: 1fr 1fr;
+		}
+		& li {
+			display: flex;
+			& a {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				font-size: 30px;
+				@media (max-width: 576px) {
+					font-size: 20px;
+					gap: 5px;
+				}
+			}
+			&:nth-child(2) {
+				justify-content: flex-end;
+			}
+			&:nth-child(3) {
+				grid-column: 1 / -1;
+				justify-content: center;
+			}
+		}
+		& svg {
+			user-select: none;
+			width: 60px;
+			height: 60px;
+			@media (max-width: 576px) {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+	& .home-btn {
+		padding: 20px 40px;
+		background-color: purple;
+		border: 1px solid white;
+		display: inline-block;
+		margin-block: 200px;
+	}
+	& #contatoForm {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: min(800px, 90%);
+		margin-bottom: 200px;
+		& form {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+		& .inputWrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+		& input,
+		textarea {
+			border: 3px solid white;
+			color: purple;
+			padding: 10px;
+			outline: none;
+			transition: border 0.3s ease;
+			&:focus-visible {
+				border: 3px solid purple;
+			}
+		}
+		& textarea {
+			resize: vertical;
+			min-height: 100px;
+		}
+		& button {
+			background-color: purple;
+			border: 1px solid white;
+			padding: 10px 20px;
+			color: white;
+			cursor: pointer;
+		}
+	}
+}
+
+.social h1,
+#contatoForm h1 {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 30px;
+}

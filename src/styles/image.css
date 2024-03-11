@@ -1,0 +1,40 @@
+.imagem {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 40px;
+	margin-bottom: 100px;
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	& h1 {
+		font-size: 72px;
+		margin-bottom: 10px;
+		@media (max-width: 576px) {
+			font-size: 50px;
+		}
+	}
+	& .data {
+		font-style: italic;
+		color: #b3b3b3;
+		font-weight: 400;
+		margin-bottom: 60px;
+	}
+	& .desc {
+		font-weight: 500;
+	}
+}
+
+.navigate {
+	margin-bottom: 30px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	font-size: 20px;
+}

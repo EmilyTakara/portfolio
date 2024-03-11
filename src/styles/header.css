@@ -1,0 +1,28 @@
+.header {
+	padding-block: 30px;
+	margin-bottom: 100px !important;
+	@media (max-width: 992px) {
+		margin-bottom: 40px !important;
+	}
+	@media (max-width: 576px) {
+		max-width: 100% !important;
+	}
+	& ul {
+		display: flex;
+		justify-content: space-between;
+		& li a {
+			display: block;
+			padding: 10px 5px;
+			border-bottom: 2px solid white;
+			text-transform: uppercase;
+			transition: 0.3s ease all;
+			&.active {
+				border-color: purple;
+			}
+			@media (max-width: 576px) {
+				padding: 6px 3px;
+				font-size: 12px;
+			}
+		}
+	}
+}
