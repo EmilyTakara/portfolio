@@ -9,39 +9,44 @@ import './styles/containers.css';
 import Grid from './routes/grid';
 import Image from './routes/image';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: '/',
+			element: <Root />,
+			errorElement: <ErrorPage />,
+			children: [
+				{
+					path: '/',
+					element: <Home />,
+				},
+				{
+					path: 'desenhos',
+					element: <Grid />,
+				},
+				{
+					path: 'rascunhos',
+					element: <Grid />,
+				},
+				{
+					path: 'tatuagens',
+					element: <Grid />,
+				},
+				{
+					path: 'outros',
+					element: <Grid />,
+				},
+				{
+					path: 'imagem/:imagemID',
+					element: <Image />,
+				},
+			],
+		},
+	],
 	{
-		path: '/',
-		element: <Root />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: '/',
-				element: <Home />,
-			},
-			{
-				path: 'desenhos',
-				element: <Grid />,
-			},
-			{
-				path: 'rascunhos',
-				element: <Grid />,
-			},
-			{
-				path: 'tatuagens',
-				element: <Grid />,
-			},
-			{
-				path: 'outros',
-				element: <Grid />,
-			},
-			{
-				path: 'imagem/:imagemID',
-				element: <Image />,
-			},
-		],
+		basename: '/portfolio',
 	},
-]);
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
