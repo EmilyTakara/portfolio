@@ -20,20 +20,24 @@ const router = createBrowserRouter(
 					path: '/',
 					element: <Home />,
 				},
+				// {
+				// 	path: 'desenhos',
+				// 	element: <Grid />,
+				// },
+				// {
+				// 	path: 'rascunhos',
+				// 	element: <Grid />,
+				// },
+				// {
+				// 	path: 'tatuagens',
+				// 	element: <Grid />,
+				// },
+				// {
+				// 	path: 'outros',
+				// 	element: <Grid />,
+				// },
 				{
-					path: 'desenhos',
-					element: <Grid />,
-				},
-				{
-					path: 'rascunhos',
-					element: <Grid />,
-				},
-				{
-					path: 'tatuagens',
-					element: <Grid />,
-				},
-				{
-					path: 'outros',
+					path: '/*',
 					element: <Grid />,
 				},
 				{

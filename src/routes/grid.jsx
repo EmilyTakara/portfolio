@@ -22,13 +22,17 @@ export default function Grid() {
 		<>
 			{images.length ? (
 				<ul className='grid'>
-					{images.map((img) => (
-						<li key={img.titulo}>
-							<Link to={`/imagem/${img.id}`} className='image-link'>
-								<img src={img.link} alt={img.description} />
-							</Link>
-						</li>
-					))}
+					{images.map((img) => {
+						let isCollection = typeof img.link === 'object';
+
+						return (
+							<li key={img.titulo}>
+								<Link to={`/imagem/${img.id}`} className='image-link'>
+									<img src={isCollection ? img.link[0] : img.link} alt={img.description} />
+								</Link>
+							</li>
+						);
+					})}
 				</ul>
 			) : (
 				<p>Ainda não foram colocadas imagens</p>

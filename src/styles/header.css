@@ -20,8 +20,8 @@
 				border-color: purple;
 			}
 			@media (max-width: 576px) {
-				padding: 6px 3px;
-				font-size: 12px;
+				padding: 4px 1px;
+				font-size: 11px;
 			}
 		}
 	}

@@ -1,7 +1,19 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import '../styles/header.css';
+import { useEffect, useState } from 'react';
 
 export default function Root() {
+	const [prop, setProp] = useState([]);
+
+	useEffect(() => {
+		const dataFetch = async () => {
+			const data = await (await fetch('/portfolio/data.json')).json();
+
+			setProp(Object.keys(data));
+		};
+		dataFetch();
+	}, []);
+
 	return (
 		<>
 			<header className='container header'>
@@ -10,18 +22,13 @@ export default function Root() {
 						<li>
 							<NavLink to='/'>Home</NavLink>
 						</li>
-						<li>
-							<NavLink to='/desenhos'>Desenhos</NavLink>
-						</li>
-						<li>
-							<NavLink to='/rascunhos'>Rascunhos</NavLink>
-						</li>
-						<li>
-							<NavLink to='/tatuagens'>Tatuagens</NavLink>
-						</li>
-						<li>
-							<NavLink to='/outros'>Outros</NavLink>
-						</li>
+						{prop.map((p) => {
+							return (
+								<li>
+									<NavLink to={p.toLowerCase()}>{p}</NavLink>
+								</li>
+							);
+						})}
 					</ul>
 				</nav>
 			</header>

@@ -9,6 +9,9 @@
 	& li {
 		overflow: hidden;
 		aspect-ratio: 1;
+		&.collection::after {
+			content: '';
+		}
 	}
 	& img {
 		width: 100%;
