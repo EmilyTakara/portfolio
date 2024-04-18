@@ -4,28 +4,28 @@
 			"id": "1",
 			"titulo": "emily fofa",
 			"desc": "mt lindinha",
-			"link": "https://imgur.com/RaricCE",
+			"link": ["https://i.imgur.com/0YT9WyF.png", "https://i.imgur.com/d4cC1nz.png"],
 			"data": "28/02/2024"
 		},
 		{
 			"id": "2",
 			"titulo": "emily linda",
 			"desc": "mt lindinha",
-			"link": "https://imgur.com/a/kQ5RswK.png",
+			"link": "https://imgur.com/a/kQ5RswK",
 			"data": "28/02/2024"
 		},
 		{
 			"id": "3",
 			"titulo": "emily gatinha",
 			"desc": "mt lindinha",
-			"link": "https://imgur.com/a/mOpAMND.png",
+			"link": "https://imgur.com/a/mOpAMND",
 			"data": "28/02/2024"
 		},
 		{
 			"id": "4",
 			"titulo": "Encomenda",
 			"desc": "Uma das minhas primeira encomendas feitas",
-			"link": "https://imgur.com/a/i3Z1WHl.png",
+			"link": "https://imgur.com/a/i3Z1WHl",
 			"data": "26/01/2022"
 		}
 	],
@@ -58,6 +58,38 @@
 			"titulo": "emily linda",
 			"desc": "mt lindinha",
 			"link": "https://cdn.discordapp.com/attachments/486734599028736015/1212537271191076924/IMG_20230806_173331239.jpg?ex=65f23255&is=65dfbd55&hm=35f2b57dd244b636dc98f5d493c90a61680dab32f0a4f6c65cb8a0510b39606e&",
+			"data": "28/02/2024"
+		}
+	],
+	"projetos": [
+		{
+			"id": "9",
+			"titulo": "emily linda",
+			"desc": "mt lindinha",
+			"link": "https://cdn.discordapp.com/attachments/486734599028736015/1212537271191076924/IMG_20230806_173331239.jpg?ex=65f23255&is=65dfbd55&hm=35f2b57dd244b636dc98f5d493c90a61680dab32f0a4f6c65cb8a0510b39606e&",
+			"data": "28/02/2024"
+		},
+		{
+			"id": "10",
+			"titulo": "emily fofa",
+			"desc": "mt lindinha",
+			"link": "https://cdn.discordapp.com/attachments/486734599028736015/1212537257773367296/fofa.png?ex=65f23252&is=65dfbd52&hm=acc07cfc64678180ec59ee6ac0386d23ba856e148136f75e11db1bce325dae8f&",
+			"data": "28/02/2024"
+		}
+	],
+	"god": [
+		{
+			"id": "9",
+			"titulo": "emily linda",
+			"desc": "mt lindinha",
+			"link": "https://cdn.discordapp.com/attachments/486734599028736015/1212537271191076924/IMG_20230806_173331239.jpg?ex=65f23255&is=65dfbd55&hm=35f2b57dd244b636dc98f5d493c90a61680dab32f0a4f6c65cb8a0510b39606e&",
+			"data": "28/02/2024"
+		},
+		{
+			"id": "10",
+			"titulo": "emily fofa",
+			"desc": "mt lindinha",
+			"link": "https://cdn.discordapp.com/attachments/486734599028736015/1212537257773367296/fofa.png?ex=65f23252&is=65dfbd52&hm=acc07cfc64678180ec59ee6ac0386d23ba856e148136f75e11db1bce325dae8f&",
 			"data": "28/02/2024"
 		}
 	],
